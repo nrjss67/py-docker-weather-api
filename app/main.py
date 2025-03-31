@@ -8,5 +8,6 @@ def get_weather() -> None:
         r = requests.get(f"http://api.weatherapi.com/v1/current.json?key={API_KEY}&q=Paris") # noqa
         print(r.json()) # noqa
 
+
 if __name__ == "__main__":
     get_weather()
